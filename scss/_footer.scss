@@ -1,0 +1,31 @@
+/*FOOTER*/
+  
+footer {
+    width: 90%;
+    height: 12vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(13, 127, 165);
+    margin-top: 5%;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .whatsapp {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  
+  .ig {
+    height: 40px;
+    width: 40px;
+  }
+  

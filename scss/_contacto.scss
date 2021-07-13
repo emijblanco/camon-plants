@@ -1,0 +1,31 @@
+/*VARIABLES*/
+
+$background_titles: #7ad7a7;
+$font_color: #4d4d4f;
+$ancho: 1320px;
+$margen-izq: 20px;
+
+
+.titulo-contacto {
+    color: $font_color;
+    font-size: 28px;
+    background-color: $background_titles;
+    width: $ancho;
+    margin-left: 2%;
+}
+
+.section-contacto {
+    width: $ancho/2;
+    margin-left: $margen-izq*1.5;
+}
+
+@for $i from 1 through 3 {
+    .opinion-#{$i} {
+        width: auto;
+        height: 100px;
+        background-color: $background_titles;
+        margin-top: 2%;
+        
+    }
+}
+

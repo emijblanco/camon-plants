@@ -1,0 +1,72 @@
+/*VARIABLES*/
+
+.menu-header {
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+
+    
+}
+
+.navbar-style {
+    align-items: center;
+    justify-content: space-evenly;
+    color: grey;
+    text-decoration: none;
+    transition: background-color 2s ease;  
+}
+
+
+.intro {
+    width: 90%;
+}
+
+.intro_title {
+    width: 90%;
+    height: 5vh;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+    color: #4d4d4f;
+    font-size: 28px;
+    background: #7ad7a7;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    }
+
+    .intro_sub-title {
+        width: 90%;
+        font-size: 20px;
+        text-align: justify;
+        color: #4e4e50;
+        margin: auto;
+      }
+
+      footer {
+        width: 90%;
+        height: 12vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgb(13, 127, 165);
+        margin-top: 5%;
+      }
+      
+      .redes-sociales {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: auto;
+      }
+      
+      .whatsapp {
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+      }
+      
+      .ig {
+        height: 40px;
+        width: 40px;
+      }

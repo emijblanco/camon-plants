@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+/*VARIABLES*/
+
+$background_titles: #7ad7a7;
+$font_color: #4d4d4f;
+
+/*SCSS*/
+
+  /*HOME*/
+  
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  header {
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+  
+  nav {
+    width: 100%;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 12px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    white-space: 100%;
+    border-radius: 10px;
+    background-color: $background_titles;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: $font_color;
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    transition: background-color 2s ease;
+  }
+  
+  .menu_items:hover {
+    background-color: $background_titles;
+  }
+  
+  .links {
+    text-decoration: none;
+    color:$font_color;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .intro_title {
+    width: 90%;
+    height: 5vh;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
+    color: $font_color;
+    font-size: 28px;
+    background: $background_titles;
+    margin-bottom: 2%;
+  }
+  
+  .intro_sub-title {
+    width: 90%;
+    font-size: 20px;
+    text-align: justify;
+    color: hsl(240, 1%, 31%);
+    margin: auto;
+  }
+  
+  .main-slider {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: column;
+  }
+  
+  .img {
+    display: grid;
+  }
+  
+  .cta {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  
+  .cta_comprar {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 4px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top, lightgrey, white);
+    margin-left: 65px;
+  }
+  
+  .carr-in {
+    margin: auto;
+    height: fit-content;
+    overflow: hidden;
+  }
+  .carr-in .c-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 1000px) {
+    .carr-in .c-item img {
+      height: 80vh;
+      object-fit: contain;
+    }
+  
+    .carr-in {
+      background-color: grey;
+      width: 90%;
+    }
+  }
+  
+  
+  .ofertas_mes_titulo {
+    width: 90%;
+    font-size: 20px;
+    text-align: justify;
+    color: hsl(240, 1%, 31%);
+    margin: auto;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  
+  .ofertas_mes_promos {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .ofertas_mes_img {
+    display: flex;
+    height: 400px;
+    width: 400px;
+  }
+  
+  .ofertas_mes_btn {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 4px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top, lightgrey, white);
+    margin-left: 38%;
+    margin-top: 1%;
+  }
+  
+  .ofertas_mes_precio {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /*MOBILE HOME */
+  
+  @media only screen and (max-width: 540px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .toggle-button {
+      display: flex;
+    }
+    .menu {
+      display: none;
+      width: 90%;
+      flex-direction: column;
+    }
+    .menu-items {
+      text-align: center;
+    }
+    .links {
+      padding: 0.5rem 1 rem;
+    }
+  .title {
+    font-size: 16px;
+    align-items: center;
+    }
+    .intro-title, .sub-titulo {
+      font-size: 12px;
+    }
+  
+  .cta {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  .cta-comprar {
+    font-size: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 4px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(to top, lightgrey, white);
+  }
+  
+  .img-promos {
+    display: flex;
+    height: 750px;
+    width: 750px;
+    
+  }
+  
+  .cta-promos {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 4px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top, lightgrey, white);
+    margin-left: 28%;
+    margin-top: 1%;
+    justify-content: space-evenly;
+  }
+  
+  .precio {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+  .intro {
+    font-size: 12px;
+    padding: 0%;
+  }
+  
+  .cta-comprar {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 2px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to top, lightgrey, white);
+  }
+  
+  .img-promos {
+    display: flex;
+    height: 250px;
+    width: 250px;
+  }
+  
+  .cta-promos {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #eeeeee;
+    border: 4px solid #7ad7a7;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to top, lightgrey, white);
+    margin-left: 28%;
+    margin-top: 1%;
+    justify-content: space-evenly;
+  }
+  
+  .precio {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .footer {
+    height: auto;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  
+  .whatsapp {
+    margin-right: 20px;
+  }
+  
+  }
+  
+  /* OFERTAS DE LA SEMANA */
+  
+  .fs-1 {
+    color: #4d4d4f;
+    background-color: #7ad7a7;
+    text-align: center;
+  }
+  
+  
+  
+  /*PRODUCTOS*/
+  
+  main {
+    margin-bottom: 120px;
+  }
+  
+  .productos-titulos h2 {
+    width: 90%;
+    margin: 10px;
+    color: #4d4d4f;
+    font-size: 20px;
+    text-align: center;
+    background-color: #7ad7a7;
+  }
+  
+  .productos-titulos p {
+    width: 90%;
+    margin: 10px;
+    color: #4d4d4f;
+    font-size: 16px;
+    font-weight: solid;
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .sub-producto {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .foto-producto {
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+    transition: heigth 0.3s;
+  }
+  
+  .foto-producto:hover {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .producto p {
+    text-align: center;
+    margin: 5px auto;
+    font-size: 16px;
+  }
+  
+  .sub-producto p {
+    font-size: 16px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    .productos-titulos h2 {
+      width: 90%;
+      margin: auto;
+      color: #4d4d4f;
+      font-size: 20px;
+      text-align: center;
+      background-color: #7ad7a7;
+    }
+    
+    .productos-titulos p {
+      width: 90%;
+      margin: auto;
+      color: #4d4d4f;
+      font-size: 16px;
+      font-weight: solid;
+      margin-top: 10px;
+    }
+    
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(3, 240px);
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 10px;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    
+    .sub-producto {
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 8px;
+    }
+    
+    .foto-producto {
+      width: 200px;
+      height: 200px;
+      margin: 5px auto;
+      
+    }
+      
+    .producto p {
+      text-align: center;
+      margin: 5px auto;
+      font-size: 8px;
+    }
+    
+    .sub-producto p {
+      font-size: 12px;
+    }
+    
+  
+    }
+  
+  /* FORM CONTACTO */
+  
+  .titulo-contacto {
+    width: 90%;
+    font-size: 40px;
+  }
+  
+  .carousel-inner {
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  
